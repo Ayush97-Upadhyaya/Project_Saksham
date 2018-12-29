@@ -1,0 +1,25 @@
+### fuzzy
+{
+
+    "query": {
+        "bool": {
+            "must": [ ],
+            "must_not": [ ],
+            "should": [
+                {
+                    "fuzzy": {
+                        "timestamp": {
+                            "value": "2018-12-05T",
+"prefix_length":"12",                            "max_expansions": "100"
+                        }
+                    }
+                }
+            ]
+        }
+    },
+    "from": 0,
+    "size": 10,
+    "sort": [ ],
+    "aggs": { }
+
+}
